@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.background-div {
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    background-image: url('bg.png');
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color on top of the background */
+    font-size: 24px;
+    height: 100vh; 
+    /* aspect-ratio: 1 / 1; */
+  }
+  nav{
+    top: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1); /* Light color with transparency */
+    width: 100%;
+    height: 70px;
+    
+
+  }
+  nav img{
+    left: -25px;
+    top: -25px;
+    position: relative;
+    height: 120px;
+    width: 120px;
+  }
+  nav p{
+    left: -50px;
+    position: relative;
+    top: 2px;
+    font-size: 45px;
+    font-family: 'Agdasima', sans-serif;
+    
+  }
+  .boxx{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Light color with transparency */
+  }
+  .boxx h3{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Agdasima', sans-serif;
+  }
+  .label{
+    font-size: 50px;
+    top: 120px;
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+  }
+  .quote{
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    font-weight: 1000;
+    font-size: 20px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+  }
+  .randombutton {
+    background-color: bisque;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px; /* Set a fixed width for the button */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 15px;
+  }
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .randombutton {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 15px;
+  }
+  footer{
+    text-align: center;
+    background-color: rgb(139, 139, 139);
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    
+  }
+  @media (max-width: 480px) { /* Adjust the breakpoint as needed */
+    .background-div {
+      height: 100%; /* Adjust the height for smaller screens */
+      font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+    .boxx{
+      height: auto;
+    }
+    .randombutton{
+      bottom: 100px;
+    }
+  }
+  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .background-div {
+      height: 100vh; /* Full height on laptops and larger screens */
+      background-size: cover; 
+    }
+    .label{
+      font-size: 40px;
+      top: 70px;
+      position: absolute;
+      font-family: 'Dancing Script', cursive;
+    }
+  }
